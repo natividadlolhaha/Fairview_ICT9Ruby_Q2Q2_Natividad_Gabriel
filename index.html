@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://www.pluggedin.com/wp-content/uploads/2019/12/i-robot-1200x720.jpg');
+            font-family: 'Raleway', sans-serif;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 30px;
+            padding: 20px;
+            max-width: 900px;
+        }
+        h1, p {
+            text-align: center;
+        }
+        input, select, textarea {
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        .btn-primary {
+            background-color: #333231;
+            border: none;
+        }
+        .searchbar {
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://natividadlolhaha.github.io/Fairview_ICT9Ruby_Q2SW1_Natividad_Gabriel/">Page 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://natividadlolhaha.github.io/Fairview_ICT9Ruby_Q2SW2_Natividad_Gabriel/">Page 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://natividadlolhaha.github.io/Fairview_ICT9Ruby_Q2Q1_Natividad_Gabriel/">Page 3</a></li>
+                </ul>
+                <form class="d-flex search-bar">
+                    <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1>Robotics Club Registration</h1>
+        <form>
+            <input type="text" class="form-control mb-3" placeholder="Name">
+            <input type="email" class="form-control mb-3" placeholder="Email Address">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control mb-3" placeholder="Age">
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" class="form-control mb-3" placeholder="Phone Number">
+                </div>
+            </div>
+            <label>Preferred Robotics Topics:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="Programming" name="topic">
+                <label class="form-check-label" for="Programming">Programming</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="AI" name="topic">
+                <label class="form-check-label" for="AI">Artificial Intelligence</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="Sensors" name="topic">
+                <label class="form-check-label" for="Sensors">Sensors</label>
+            </div>
+            <label class="mt-3">Experience Level:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="Beginner" name="experience">
+                <label class="form-check-label" for="Beginner">Beginner</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="Intermediate" name="experience">
+                <label class="form-check-label" for="Intermediate">Intermediate</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="Advanced" name="experience">
+                <label class="form-check-label" for="Advanced">Advanced</label>
+            </div>
+            <select class="form-select mt-3 mb-3">
+                <option selected>Choose a project...</option>
+                <option value="1">Motion Sensor for a Doorbell</option>
+                <option value="2">AI Art Generator</option>
+                <option value="3">Adventure Game</option>
+            </select>
+            <textarea class="form-control mb-3" rows="3" placeholder="Statement of Interest"></textarea>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
